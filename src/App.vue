@@ -1,13 +1,13 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const people = ref([
   { name: 'Jan', age: 12 },
    { name: 'Piet', age: 20 }
 ])
 
-const newName = ref()
-const newAge = ref()
+const newName = ref();
+const newAge = ref();
 
 function addPerson(){
 
