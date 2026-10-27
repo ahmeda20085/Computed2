@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "computed",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,6 +13,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.10",
-    "vite": "^8.3.5"
+    "vite": "^8.3.4"
   }
 }
