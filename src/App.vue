@@ -19,11 +19,11 @@ const Adults = computed (() => {
 }) 
 
 const totalepeople = computed (() => {
-
+return people.value.length
 })
 
 const numberOfChildren = computed (() => {
-  
+return children.value.length
 })
 
 function addPerson() {
@@ -72,7 +72,9 @@ function addPerson() {
 {{adult.name}} ({{adult.age}} jaar)
 </li>
     </ul>
+
+    <h3>totaal aantal mensen {{totalepeople}}</h3>
     
-    
+    <h3>totaal aantal kinderen {{numberOfChildren}}</h3>
   </div>
 </template>
