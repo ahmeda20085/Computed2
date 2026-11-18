@@ -14,9 +14,20 @@ const children = computed(() => {
   return people.value.filter((p) => p.age < 18)
 })
 
+const Adults = computed (() => {
+  return people.value.filter((p) => p.age >= 18)
+}) 
+
+const totalepeople = computed (() => {
+
+})
+
+const numberOfChildren = computed (() => {
+  
+})
 
 function addPerson() {
-  // Voorkom lege toevoegingen
+ 
   if (!newName.value || newAge.value === null || newAge.value === '') return
 
  
@@ -54,5 +65,14 @@ function addPerson() {
         {{ child.name }} ({{ child.age }} jaar)
       </li>
     </ul>
+
+    <h3>volwassenen</h3>
+      <ul>
+<li v-for="(adult, index) in Adults" key="index1">
+{{adult.name}} ({{adult.age}} jaar)
+</li>
+    </ul>
+    
+    
   </div>
 </template>
